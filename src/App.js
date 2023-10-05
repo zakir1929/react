@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Fragment, useState } from 'react';
 
@@ -15,12 +14,20 @@ function App() {
         setCount(count + 1)
     }
 
+    let name = "zakir hussain";
+
     return (
         <Fragment>
-        <div>{count}</div>
-        <button onClick={increment}>
-            Click Alert
-        </button>
+            <div>{name} Hello World </div>
+            <div> <Demo /> </div>
+        </Fragment>
+    );
+}
+
+function Demo(){
+    return(
+        <Fragment>
+            <h1>Demo Tag</h1>
         </Fragment>
     );
 }
