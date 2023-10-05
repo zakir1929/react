@@ -1,6 +1,8 @@
 import './App.css';
 import { Fragment, useState } from 'react';
 
+import List from './List';
+
 function App() {
 
 
@@ -35,6 +37,8 @@ function App() {
                     )
                 }
             </ul>
+            <List layout="numbered" items={2}/>
+            <List layout="bullet" items={4}/>
         </Fragment>
     );
 }
