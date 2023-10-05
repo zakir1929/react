@@ -23,6 +23,10 @@ function App() {
             phone: 4545454545,
         },
     ];
+    
+    const onVideoClick = () => {
+        alert(1);
+    }
 
     return (
         <Fragment>
@@ -37,6 +41,9 @@ function App() {
                     )
                 }
             </ul>
+            <button onClick={onVideoClick}>
+                Click Here
+            </button>
             <List layout="numbered" items={2}/>
             <List layout="bullet" items={4}/>
         </Fragment>
