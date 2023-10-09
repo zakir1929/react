@@ -2,6 +2,8 @@ import './App.css';
 import { Fragment, useState } from 'react';
 
 import List from './List';
+import Counter from './Counter';
+import AddVideo from './AddVideo';
 
 function App() {
 
@@ -30,6 +32,9 @@ function App() {
 
     return (
         <Fragment>
+
+            <AddVideo></AddVideo>
+
             <ul>
                 {
                     videos.map(video => 
@@ -46,6 +51,7 @@ function App() {
             </button>
             <List layout="numbered" items={2}/>
             <List layout="bullet" items={4}/>
+            <Counter></Counter>
         </Fragment>
     );
 }
